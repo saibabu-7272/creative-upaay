@@ -1,7 +1,7 @@
 import './index.css'
 import { RiSearch2Line } from "react-icons/ri";
 import { SlCalender } from "react-icons/sl";
-import { CiBellOn } from "react-icons/ci";
+import { CiBellOn,CiCalendarDate } from "react-icons/ci";
 import { PiQuestionThin } from "react-icons/pi";
 
 const Header = () => (
@@ -11,7 +11,7 @@ const Header = () => (
       <input type="text" placeholder="Search for anything..." />
     </div>
     <div className="header-actions">
-      <span className="header-icon"><SlCalender /></span>
+      <span className="header-icon"><CiCalendarDate /></span>
       <span className="header-icon"><PiQuestionThin /></span>
       <span className="header-icon"><CiBellOn /></span>
       <div className="user-profile">

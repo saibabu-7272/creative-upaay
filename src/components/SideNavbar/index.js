@@ -3,11 +3,13 @@ import { TbMessageDots } from "react-icons/tb";
 import { TiThMenuOutline } from "react-icons/ti";
 import { BsListTask ,BsPeople } from "react-icons/bs";
 import { LuSettings } from "react-icons/lu";
+import logo from '../../images/dash-logo.png'
 
 const SideNavbar = ({ isOpen, isMobile }) => (
     <div className={`side-navbar ${isMobile ? 'mobile' : ''} ${isOpen ? 'open' : ''}`}>
         {/* Top Section */}
         <div className="sidebar-header">
+          <img className='logo' src={logo} alt="logo" />
           <h2>Project M.</h2>
         </div>
 

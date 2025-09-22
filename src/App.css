@@ -389,7 +389,6 @@ hr {
   gap: 24px;
   overflow-x: auto;
   padding-bottom: 24px;
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
 /* Mobile kanban styles */
@@ -403,7 +402,7 @@ hr {
 .kanban-column {
   flex: 1;
   min-width: 300px;
-  background-color: white;
+  background-color:black;
   border-radius: 16px;
   padding: 20px;
 }
@@ -455,7 +454,7 @@ hr {
 
 /* Task Cards */
 .task-card {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.918);
   border-radius: 12px;
   padding: 16px;
   margin-bottom: 16px;
