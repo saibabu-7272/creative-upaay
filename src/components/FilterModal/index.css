@@ -1,0 +1,166 @@
+.filter-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.filter-modal-content {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile modal styles */
+@media screen and (max-width: 768px) {
+  .filter-modal-content {
+    padding: 16px;
+    width: 90%;
+  }
+}
+
+.filter-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.filter-modal-header h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #0D062D;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #787486;
+}
+
+.filter-section {
+  margin-bottom: 24px;
+}
+
+.filter-section h4 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  color: #0D062D;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #787486;
+}
+
+.filter-option input[type="checkbox"] {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.priority-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.priority-indicator.high {
+  background-color: #D8727D;
+}
+
+.priority-indicator.low {
+  background-color: #68B266;
+}
+
+.priority-indicator.completed {
+  background-color: #68B266;
+}
+
+.filter-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+/* Mobile filter actions */
+@media screen and (max-width: 480px) {
+  .filter-actions {
+    flex-direction: column-reverse;
+    gap: 8px;
+  }
+  
+  .filter-actions button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+.clear-btn {
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #787486;
+}
+
+.apply-btn {
+  background-color: #5030E5;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+}
+
+.apply-btn:hover {
+  background-color: #4020d5;
+}
+
+.clear-btn:hover {
+  background-color: #e8e8e8;
+}
+
+/* Active filter indicator */
+.filter-active {
+  position: relative;
+}
+
+.filter-active::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #5030E5;
+}
